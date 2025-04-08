@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Vehicle Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>UK Vehicle Lookup</h1>
+        <div class="search-container">
+            <input type="text" id="regNumber" placeholder="ENTER REG" maxlength="8">
+            <button onclick="searchVehicle()">Search</button>
+        </div>
+        <div id="loading" class="loading-container">
+            <div class="spinner"></div>
+            <p>Searching...</p>
+        </div>
+        <div id="results" class="results-container">
+            <div class="result-item">
+                <span class="label">Make:</span>
+                <span id="make">-</span>
+            </div>
+            <div class="result-item">
+                <span class="label">Model:</span>
+                <span id="model">-</span>
+            </div>
+            <div class="result-item">
+                <span class="label">Year:</span>
+                <span id="year">-</span>
+            </div>
+            <div class="result-item">
+                <span class="label">Body Style:</span>
+                <span id="bodyStyle">-</span>
+            </div>
+            <div class="image-section">
+                <h3>Approximate Image</h3>
+                <div id="vehicle-image-container">
+                    <img id="vehicle-image" src="" alt="Vehicle Image" style="display: none;">
+                    <p id="no-image-message">No image available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
