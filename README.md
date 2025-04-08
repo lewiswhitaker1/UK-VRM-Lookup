@@ -2,6 +2,10 @@
 
 A simple web application that allows users to search for vehicle details using the UK Vehicle Data API.
 
+## Quick Usage Video
+
+https://github.com/user-attachments/assets/a9c73e2d-7f9e-4496-8de1-9362493183b5
+
 ## Features
 
 - Search for vehicle details by registration number (Only VRM's with the letter A with the test API key)
